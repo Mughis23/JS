@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi String</title>
+</head>
+<body>
+    <script>
+        const value1 = parseInt("78");
+        const value2 = 7;
+        const sum = value1 + value2;
+        
+        document.writeln(`<p>${sum}</p>`)
+
+        document.writeln(`<P>${parseInt("1.1")}</p>`)
+        document.writeln(`<p>${parseFloat("12.12")}</p>`)
+        document.writeln(`<p>${Number("23")}</p>`)
+
+        const a = 1
+        const b = 2
+        const total = a + b
+
+        document.writeln(`<p>${total}</p>`)
+
+        document.writeln(`<p>${parseInt("salah")}</p>`)
+        document.writeln(`<p>${parseFloat("5.6 bllabla")}</p>`)
+
+        const satu = Number("salah") //NaN
+        const totalNumber = satu + 97;
+        document.writeln(`<p>${totalNumber}</p>`)
+
+        document.writeln(`<p>${isNaN(satu)}</p>`)
+        document.writeln(`<p>${isNaN(97)}</p>`)
+        document.writeln(`<p>${isNaN(NaN)}</p>`)
+    </script>
+</body>
+</html>
