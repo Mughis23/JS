@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Function Return Value</title>
+</head>
+<body>
+    <script>
+        // Membuat Function Dengan Parameter Dan Return Value
+        function
+         sayHello(namaAwal, namaAkhir){
+             const say = `Hai ${namaAwal} ${namaAkhir}`
+             return say
+         }
+    const result = sayHello("Mughis", "Fadhil")
+    document.writeln(`<p>${result}</p>`)
+
+         function dapatNilaiAkhir(Value) {
+             if (Value > 90){
+                 return "A";
+             }else if (Value > 80){
+                 return "B";
+             }else if (Value > 75){
+                 return "C";
+             }else {
+                 return "D";
+             }
+         }
+         const nilaiAkhir = dapatNilaiAkhir(87);
+         document.writeln(`<p>${nilaiAkhir}</p>`)
+
+         function isContains(array, searchValue){
+             for (const element of array) {
+                 console.info(`Iterasi Element ${element}`)
+                 if(element === searchValue){
+                     return true
+                 }
+                 
+             }
+             return false
+         }
+         const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+         const search = 5
+         const found = isContains(array, search)
+         document.writeln(`<p>${found}}</p>`)
+
+    </script>
+</body>
+</html>
