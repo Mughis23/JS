@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+<body>
+    <script>
+       // const sayHello = (name) => {
+         //   const katakan = `Hello ${name}`
+           // console.info(katakan)
+        //}
+
+        const sayHello = name => console.info(`Hai ${name}`)
+        sayHello("Mughis")
+
+        // const sum = (first, second) => {
+        //    return first + second
+        // }
+
+        const sum = (first, second) => first + second
+
+        console.info(sum(10, 100))
+
+        function giveMeName(callback){
+            callback("Mughis")
+        }
+
+            // ANONYMOUS FUNCTION
+        // giveMeName(function(name){
+        //    console.info(`Hello ${name}`)
+        // })
+
+        // ARROW FUNCTION
+        giveMeName(nama => console.info(`Hello ${nama}`))
+    </script>
+</body>
+</html>

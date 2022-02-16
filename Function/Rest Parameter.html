@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Parameter</title>
+</head>
+<body>
+    <script>
+        function sum(name, ...data){
+            let total = 0
+            for (const item of data){
+                total += item;
+            }
+            document.writeln(`<p>Total ${name} adalah ${total}</p>`)
+        }
+
+        sum("Oranco", 10, 20, 30, 40, 50)
+        sum("Yayayay", 28, 43, 55, 41, 70)
+
+        const value = [10, 10, 10, 10]
+        sum("Tes", ...value)
+
+        function oldSum(){
+            let total = 0
+            for (const argument of arguments){
+                total += argument;
+            }
+            document.writeln(`<p>Total nya ${total}</p>`)
+        }
+
+        oldSum(1,2,3,4,5)
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geetter dan Setter</title>
+</head>
+<body>
+    <script>
+        const person = {
+            firstName : "Mughis",
+            lastName : "Fadhil",
+            get fullName (){
+                return `${this.firstName} ${this.lastName}`
+            },
+            set namaLengkap(value){
+                const array = value.split(" ")
+                this.firstName = array[0]
+                this.lastName = array[1]
+            }
+        }
+
+        person.fullName = "Mughis Fadhil"
+        console.table(person);
+
+        person.fullName = "Fathur Rahman"
+        console.table(person)
+
+        person.firstName = "Mughis"
+        console.info(person.fullName)
+    </script>
+</body>
+</html>

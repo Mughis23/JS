@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Scope</title>
+</head>
+<body>
+    <script>
+        // GLOBAL SCOPE
+        let counter = 0
+
+        // GLOBAL SCOPE
+        function hitMe(){
+            // LOCAL SCOPE hitMe
+            counter++
+        }
+
+        // GLOBAL SCOPE
+        function other (){
+            // LOCAL SCOPE other
+        }
+
+        hitMe();
+        hitMe();
+
+        console.info(counter)
+
+        function first(){
+            // LOCAL SCOPE first
+            let firstVariable = "Awal"
+
+            function firstNested(){
+                console.info(firstVariable)
+                const firstNestedVariable = "First Nested"
+            }
+            firstNested()
+            
+        }
+        function second(){
+            // LOCAL SCOPE second
+            let secondVariable = "Kedua"
+        }
+        first()
+        second()
+    </script>
+</body>
+</html>
